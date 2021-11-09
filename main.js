@@ -2,6 +2,12 @@ window.onscroll = function () {
     scrollFunction()
 };
 
+if(screen.width <450){
+    scrollFunction();
+}
+
+// alert("Your screen resolution is: " + screen.width + 'x' + screen.height)
+
 var counter = 0;
 var display_str = "";
 var display_div = document.getElementsByClassName("surface")
@@ -9,7 +15,7 @@ var hasBeenCalled = false;
 var interval = 0
 
 function scrollFunction() {
-    if (document.body.scrollTop > 1000 && !hasBeenCalled) {
+    if (screen.width > 450 && document.body.scrollTop > 1000 && !hasBeenCalled || screen.width < 450 && !hasBeenCalled) {
         interval = setInterval("incrementCounter()", 10)
         hasBeenCalled = true;
     }
