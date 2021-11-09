@@ -453,6 +453,9 @@ th {
     #presentation-coordonnees .surface-parking {
         margin: 5%;
     }
+    .surface{
+        margin-top: 30%;
+    }
 
     #tarifs-horaires .horaires {
         margin: 5%;
