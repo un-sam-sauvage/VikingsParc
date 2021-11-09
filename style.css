@@ -458,7 +458,7 @@ th {
     }
 
     #tarifs-horaires .horaires {
-        margin: 5%;
+        margin:5% 0;
     }
 
     #tarifs-horaires li {
