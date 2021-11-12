@@ -46,14 +46,26 @@ th {
 }
 
 #header .navbar ul {
-    position: absolute;
+    position: relative;
+    left: 35%;
     font-weight: 800;
-    right: 20%;
 }
 
-@media (max-width : 1600px) {
+@media (max-width : 1840px) {
     #header .navbar ul {
-        right: 30%;
+        left: 20%;
+    }
+}
+@media (max-width : 1500px){
+    #header .navbar ul{
+        left: 5%;
+        font-size: 1.2rem;
+    }
+}
+@media (max-width : 1400px){
+    #header .navbar ul{
+        left: 10%;
+        font-size: 1rem;
     }
 }
 
